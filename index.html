@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Passe de Batalha FORA da LEI do Battle Royale do Fortnite!</title>
 </head>
@@ -14,37 +15,56 @@
         <nav>
             <div class="logo-content">
                 <div class="logo-epic">
-                    <img src="./assets/imgs/logo-epic.png">
+                    <div id="logo-epic"></div>
                     <i class="fa-solid fa-chevron-down"></i>
-
-                    <ul>
-                        <li><a href="#" class="list-epic"></a>Epic Games</li>
-                        <li>Jogar</li>
-                        <li><img src="./assets/imgs/F-fortnite.png"><a href="#">Fortnite</a></li>
-                        <li><img src="./assets/imgs/rocket_league_logo.png"><a href="#">Rocket League</a></li>
-                        <li><img src="./assets/imgs/fall-guys.png" alt=""><a href="#">Fall Guys</a></li>
-
-                        <li>Descubra</a></li>
-                        <li><img src="./assets/imgs/logo-epic.png" alt=""><a href="#">Epic Games Store</a></li>
-                        <li><img src="./assets/imgs/fab.png" alt=""><a href="#"></a>Fab</li>
-                        <li><img src="./assets/imgs/Sketchfab.png" alt=""><a href="#">Sketchfab</a></li>
-                        <li><img src="./assets/imgs/ArtStation.png" alt=""><a href="#">ArtStation</a></li>
-
-                        <li>Criar</li>
-                        <li><img src="./assets/imgs/unreal.jpg" alt=""><a href="#">Unreal Engine</a></li>
-                        <li><img src="./assets/imgs/F-fortnite.png" alt=""><a href="#">Criação no Fortnite</a></li>
-                        <li><img src="./assets/imgs/meta.svg"><a href="#">MetaHuman</a></li>
-                        <li><img src="./assets/imgs/twinmotion_logo.jpg" alt=""><a href="#">Twinmotion</a></li>
-                        <li><img src="./assets/imgs/Reality.png" alt=""><a href="#">RealityScan</a></li>
-                        <li><img src="./assets/imgs/Reality-capture.png" alt=""><a href="#">RealityCapture</a></li>
-                        <li><img src="./assets/imgs/logo-epic.png"><a href="#">Epic Online Services</a></li>
-                        <li><img src="./assets/imgs/logo-epic.png"><a href="#">Publicar na Epic Games Store</a></li>
-                        <li><img src="./assets/imgs/logo-epic.png"><a href="#">Comunidade de Desenvolvedores</a></li>
-                    </ul>
+                    <div class="list-container">
+                        <ul class="list-epic">
+                            <div class="play">
+                                <h3>Jogar</h3>
+                                <li><img src="./assets/imgs/icons/F-fortnite.png"><a href="#">Fortnite</a></li>
+                                <li><img src="./assets/imgs/icons/rocket_league_logo.png"><a href="#">Rocket League</a></li>
+                                <li><img src="./assets/imgs/icons/fall-guys.png" alt=""><a href="#">Fall Guys</a></li>
+                            </div>
+                            <div class="discover">
+                                <h3>Descubra</h3>
+                                <li><img src="./assets/imgs/icons/logo-epic.png" alt=""><a href="#">Epic Games Store</a></li>
+                                <li><img src="./assets/imgs/icons/fab.png" alt=""><a href="#">Fab</a></li>
+                                <li><img src="./assets/imgs/icons/Sketchfab.png" alt=""><a href="#">Sketchfab</a></li>
+                                <li><img src="./assets/imgs/icons/ArtStation.png" alt=""><a href="#">ArtStation</a></li>
+                            </div>
+    
+                            <div class="create">
+                                <h3>Criar</h3>
+                                <li><img src="./assets/imgs/icons/unreal.png" alt=""><a href="#">Unreal Engine</a></li>
+                                <li><img src="./assets/imgs/icons/F-fortnite.png" alt=""><a href="#">Criação no Fortnite</a></li>
+                                <li><img src="./assets/imgs/icons/meta.svg"><a href="#">MetaHuman</a></li>
+                                <li><img src="./assets/imgs/icons/Reality.png" alt=""><a href="#">RealityScan</a></li>
+                                <li><img src="./assets/imgs/icons/Reality-capture.png" alt=""><a href="#">RealityCapture</a></li>
+                                <li><img src="./assets/imgs/icons/logo-epic.png"><a href="#">Epic Online Services</a></li>
+                                <li><img src="./assets/imgs/icons/logo-epic.png"><a href="#">Publicar na Epic Games Store</a></li>
+                                <li><img src="./assets/imgs/icons/logo-epic.png"><a href="#">Comunidade de Desenvolvedores</a></li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="logo-fort">
-                    <img src="./assets/imgs/logo-fortnite.png">
+                    <div id="logo-fort"></div>
                 </div>
+            </div>
+
+            <ul class="list-itens">
+                <li><a href="">Descubra</a></li>
+                <li><a href="">Minha Biblioteca</a></li>
+                <li><a href="">Criar <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">Loja de Itens <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">Clube</a></li>
+                <li><a href="">Mais <i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+
+            <div class="input-container">
+                <label for="search"><i class="fa-solid fa-magnifying-glass" style="color: #6e6e6e;"></i></label>
+                <input type="text" id="search" placeholder="Procurar">
             </div>
 
             <button class="download-btn">Baixar</button>
