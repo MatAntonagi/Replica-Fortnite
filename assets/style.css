@@ -14,15 +14,17 @@ body{
     width: 100%;
 }
 
-.download-btn{
-    width: 3.75rem;
-    height: 1.75rem;
+.button{
+    cursor: pointer;
+    width: max-content;
+    padding: .5rem;
 
     border: none;
     border-radius: .3rem;
 
     background-color: #f7ff19;
     color: black;
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
 
 }
