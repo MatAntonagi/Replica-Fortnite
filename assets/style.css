@@ -29,16 +29,20 @@ body{
 
 }
 
-.desktop-only{
+.mobile-only{
     display: none;
 }
 
-@media (width > 1200px){
+.desktop-only{
+    display: block;
+}
+
+@media (width < 1200px){
     .desktop-only{
-        display: block;
+        display: none;
     }
 
     .mobile-only{
-        display: none;
+        display: block;
     }
 }

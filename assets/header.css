@@ -21,17 +21,8 @@ header{
 .logo-epic{
     position: relative;
     display: flex;
-    gap: .5rem;
     align-items: center;
-    
-    & #logo-epic{
-        background-image: url(./imgs/icons/logo-epic.svg);
-        background-position: 50%;
-        background-size: cover;
-        width: 2rem;
-        height: 2rem;
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     &:hover{
         & #logo-epic{
@@ -40,9 +31,18 @@ header{
 
         & i{
             transform: rotate(180deg);
-            transition: .2s ease;
+            transition: .2s ease-out;
             color: rgb(110, 110, 110);
         }
+    }
+    
+    & #logo-epic{
+        background-image: url(./imgs/icons/logo-epic.svg);
+        background-position: 50%;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
     }
 
     & i{
@@ -56,12 +56,13 @@ header{
 
 .list-epic{
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     left: 0;
     display: grid;
     grid-template-areas: 
     "A C"
     "B C";
+    cursor: initial;
 
     font-family: "Inter", sans-serif;
     font-size: .875rem;
@@ -74,7 +75,7 @@ header{
     
     border: 1px solid rgb(110, 110, 110);
     border-radius: 1rem;
-    background-color: rgba(54, 54, 54, .5);
+    background-color: rgba(54, 54, 54, .995);
 
     & div{
         display: flex;
