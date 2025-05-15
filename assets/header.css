@@ -5,6 +5,7 @@ header{
     height: 4.5rem;
     padding: 1rem 1.5rem;
     background-color: rgba(16, 16, 20, .9);
+    z-index: 2;
 
     & nav{
         display: flex;
@@ -189,7 +190,7 @@ header{
     }
 }
 
-.input-container{
+.input-content{
     width: 25rem;
     height: 2.5rem;
     position: relative;
@@ -292,6 +293,39 @@ header{
 }
 
 .menu-btn{
-
     font-size: 1.4rem;
+}
+
+
+
+@media (width < 1200px){
+    header{
+        padding: 1rem 1rem;
+
+        & .logo-content{
+        gap: .75rem;
+
+            & #logo-epic{
+            width: 1.7rem;
+            height: 1.7rem;
+            }
+
+            & #logo-fort{
+                width: 4.37rem;
+                height: 1.4rem;
+            }
+        }
+    }
+    
+    .buttons-container{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        & button{
+            height: 1.75rem;
+            padding: .5rem;
+            font-size: .875rem;
+        }
+    }
 }
