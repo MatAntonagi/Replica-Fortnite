@@ -190,8 +190,19 @@ header{
     }
 }
 
+.screen-large-only{
+    align-content: center;
+    
+    & .li-screen-large{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
 .input-content{
-    width: 25rem;
+    max-width: 27rem;
+    min-width: 20rem;
     height: 2.5rem;
     position: relative;
 
@@ -327,5 +338,11 @@ header{
             padding: .5rem;
             font-size: .875rem;
         }
+    }
+}
+
+@media (width < 1375px){
+    .screen-large-only{
+        display: none;
     }
 }
