@@ -149,6 +149,7 @@ header{
 
 .logo-fort{
     align-content: center;
+
     & #logo-fort{
         width: 5.09rem;
         height: 1.5rem;
@@ -207,6 +208,16 @@ header{
 
 #create{
     position: relative;
+
+    &:hover #nav-item{
+        color: rgb(192, 192, 192);
+    }
+
+    &:hover i{
+        transform: rotate(180deg);
+        transition: .2s ease-out;
+        color: rgb(192, 192, 192);
+    }
 }
 
 .create-list-container{
@@ -227,9 +238,9 @@ header{
             padding: .5rem;
 
             &:hover{
-            background-color: rgb(110, 110, 110, .7);
-            border-radius: .5rem;
-            color: white;
+                background-color: rgb(110, 110, 110, .7);
+                border-radius: .5rem;
+                color: white;
             }
         }
     }
@@ -237,6 +248,16 @@ header{
 
 #shop{
     position: relative;
+
+    &:hover #nav-item{
+        color: rgb(192, 192, 192);
+    }
+
+    &:hover i{
+        transform: rotate(180deg);
+        transition: .2s ease-out;
+        color: rgb(192, 192, 192);
+    }
 }
 
 .shop-list-container{
@@ -268,6 +289,16 @@ header{
 
 #more{
     position: relative;
+
+    &:hover #nav-item{
+        color: rgb(192, 192, 192);
+    }
+
+    &:hover i{
+        transform: rotate(180deg);
+        transition: .2s ease-out;
+        color: rgb(192, 192, 192);
+    }
 }
 
 .more-list-container{
