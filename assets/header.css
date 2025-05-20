@@ -3,17 +3,21 @@ header{
     top: 0;
     width: 100%;
     height: 4.5rem;
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
+    align-content: center;
     background-color: rgba(16, 16, 20, .9);
     z-index: 2;
 
     & nav{
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     & .logo-content{
+        height: 100%;
         display: flex;
         gap: 2rem;
     }
@@ -55,9 +59,9 @@ header{
     display: none;
 }
 
-.list-epic{
+.list-content{
     position: absolute;
-    top: 2rem;
+    top: 4.2rem;
     left: 0;
     display: grid;
     grid-template-areas: 
@@ -89,9 +93,7 @@ header{
 
         width: 17.5rem;
         padding: 2rem;
-        border-bottom: 1px solid rgb(110, 110, 110);
-        
-        
+        border-bottom: 1px solid rgb(110, 110, 110); 
     }
 
     .discover{
@@ -146,6 +148,7 @@ header{
 }
 
 .logo-fort{
+    align-content: center;
     & #logo-fort{
         width: 5.09rem;
         height: 1.5rem;
@@ -161,24 +164,35 @@ header{
     }
 }
 
+.list-desktop{
+    height: 100%;
+    align-content: center;
+}
+
 .list-itens{
+    height: 100%;
     display: flex;
     gap: 2rem;
     align-items: center;
 
-    & a{
-        line-height: 1.25rem;
-        color: white;
-        font-family: "Inter", sans-serif;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
+    & li{
+        height: 100%;
+        align-content: center;
 
-        & i{
-            font-size: .5rem;
-        }
+        & a{
+            height: 100%;
+            line-height: 1.25rem;
+            color: white;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
 
-        &:hover{
+            & i{
+                font-size: .5rem;
+            }
+
+            &:hover{
             color: rgb(192, 192, 192);
 
             & i{
@@ -187,13 +201,107 @@ header{
                 transition: .2s ease;
             }
         }
+        }
+    }
+}
+
+#create{
+    position: relative;
+}
+
+.create-list-container{
+    display: none;    
+
+    & .list-content{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        white-space: nowrap; /* Não deixa quebra a linha*/
+
+        & a{
+            font-weight: 400;
+            line-height: 150%;
+            font-size: 0.875rem;
+            letter-spacing: 0.02em;
+            color: white;
+            padding: .5rem;
+
+            &:hover{
+            background-color: rgb(110, 110, 110, .7);
+            border-radius: .5rem;
+            color: white;
+            }
+        }
+    }
+}
+
+#shop{
+    position: relative;
+}
+
+.shop-list-container{
+    display: none;
+
+    & .list-content{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        white-space: nowrap; /* Não deixa quebra a linha*/
+
+        & a{
+            font-weight: 400;
+            line-height: 150%;
+            font-size: 0.875rem;
+            letter-spacing: 0.02em;
+            color: white;
+            padding: .5rem;
+
+            &:hover{
+            background-color: rgb(110, 110, 110, .7);
+            border-radius: .5rem;
+            color: white;
+
+            }
+        }
+    }
+}
+
+#more{
+    position: relative;
+}
+
+.more-list-container{
+    display: none;
+
+    & .list-content{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        white-space: nowrap; /* Não deixa quebra a linha*/
+
+        & a{
+            font-weight: 400;
+            line-height: 150%;
+            font-size: 0.875rem;
+            letter-spacing: 0.02em;
+            color: white;
+            padding: .5rem;
+            
+            &:hover{
+                background-color: rgb(110, 110, 110, .7);
+                border-radius: .5rem;
+                color: white;
+            }
+        }
     }
 }
 
 .screen-large-only{
     align-content: center;
+    height: 100%;
     
     & .li-screen-large{
+        height: 100%;
         display: flex;
         gap: 2rem;
         align-items: center;
