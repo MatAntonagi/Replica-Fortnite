@@ -7,6 +7,8 @@ const shopLi = document.getElementById('shop')
 const shopMenu = document.getElementById('shopMenu')
 const moreLi = document.getElementById('more')
 const moreMenu = document.getElementById('moreMenu')
+const logoFortnite = document.getElementById('logo-fort')
+const btnDown = document.getElementById('btn-download')
 
 // Variável para controlar o tempo de desaparecimento
 let hideTimeout; 
@@ -17,13 +19,41 @@ function menuOn () {
     logoEpic.addEventListener('mouseenter', () => {
         menuEpic.style.display = "block"
     })
-
+    
+    // Fecha ao tirar o mouse de cima.
     logoEpic.addEventListener('mouseleave', () => {
             menuEpic.style.display = "none";
     });
 }
 
 menuOn()
+
+function clickMenu () {
+    // funcão para click.
+    logoEpic.addEventListener('click', () => {
+        if (menuEpic.style.display === 'none' || menuEpic.style.display === '') {
+            menuEpic.style.display = 'block';
+        } else {
+            menuEpic.style.display= 'none'
+        }
+
+        // Atualiza visibilidade do botão e do logo Fortnite
+            disappear();
+    })
+}
+
+clickMenu()
+
+function disappear () {
+    // Quando o menu estiver aberto desaparece o botao e o logo fortnite.
+    if (menuEpic.style.display === 'block') {
+        logoFortnite.style.display = 'none';
+        btnDown.style.display = 'none';
+    } else {
+        logoFortnite.style.display = 'block';
+        btnDown.style.display = 'block';
+    }
+}
 
 // Funçao de hover para aparecer o menu da li "Criar".
 function createMenuOn () {

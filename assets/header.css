@@ -73,7 +73,6 @@ header{
     font-size: .875rem;
     font-weight: 400;
     line-height: 150%;
-    font-size: 0.875rem;
     letter-spacing: 0.02em;
     color: white;
 
@@ -82,33 +81,55 @@ header{
     border-radius: 1rem;
     background-color: rgba(54, 54, 54, .995);
 
-    & div{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .play{
         grid-area: A;
 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         width: 17.5rem;
         padding: 2rem;
         border-bottom: 1px solid rgb(110, 110, 110); 
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 
     .discover{
         grid-area: B;
 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         width: 17.5rem;
         padding: 2rem;
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 
     .create{
         grid-area: C;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         border-left: 1px solid rgb(110, 110, 110);
         width: 22rem;
         height: 100%;
         padding: 2rem;
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 
     & h3{
@@ -120,7 +141,7 @@ header{
         margin-left: .5rem;
     }
 
-    & li{
+    & .itens{
         display: flex;
         gap: 1rem;
         padding: .5rem;
@@ -466,6 +487,66 @@ header{
             }
         }
     }
+
+    .list-container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .list-content{
+        max-height: 100vh;      /* impede que passe da tela */
+        overflow-y: auto;      /* ativa o scroll interno */
+        width: 100%;
+        top: 3.5rem;
+        left: -1rem;
+        border-radius: 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        background-color: rgb(16, 16, 20);
+
+        & .play{
+            border-bottom: none;
+            padding: 1rem;
+            
+            & h3{
+                font-size: 1.5rem;
+            }
+
+            & a{
+                font-size: 1rem;
+            }
+        }
+
+        & .discover{
+            border-bottom: none;
+            padding: 1rem;
+
+            & h3{
+                font-size: 1.5rem;
+            }
+
+            & a{
+                font-size: 1rem;
+            }
+        }
+
+        & .create{
+            border-bottom: none;
+            padding: 1rem;
+
+            & h3{
+                font-size: 1.5rem;
+            }
+
+            & a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+
     
     .buttons-container{
         display: flex;
