@@ -5,7 +5,7 @@ header{
     height: 4.5rem;
     padding: 0 1.5rem;
     align-content: center;
-    background-color: rgba(16, 16, 20, .9);
+    background-color: rgb(16, 16, 20);
     z-index: 2;
 
     & nav{
@@ -29,12 +29,12 @@ header{
     align-items: center;
     cursor: pointer;
 
-    &:hover{
-        & #logo-epic{
+    .hover-enabled &:hover {
+        #logo-epic {
             background-image: url(./imgs/icons/logo-epic-Hover.svg);
         }
 
-        & i{
+        i {
             transform: rotate(180deg);
             transition: .2s ease-out;
             color: rgb(110, 110, 110);
@@ -482,8 +482,13 @@ header{
             }
 
             & #logo-fort{
-                width: 4.37rem;
-                height: 1.4rem;
+                width: 2rem;
+                height: 2rem;
+                background-image: url(./imgs/icons/F-fortnite.svg);
+            }
+
+            .hover-enabled #logo-fort:hover {
+                background-image: url(./imgs/icons/f-fort-hover.svg);
             }
         }
     }
@@ -546,7 +551,41 @@ header{
         }
     }
 
+    .menu-btn{
+        width: min-content;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
 
+    .menu-mobile-container{
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        
+    .menu-mobile-content{
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        width: 100vw;
+        height: 100vh;      /* impede que passe da tela */
+        background-color: rgb(16, 16, 20);
+        font-family: "Inter", sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+
+        & a{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: white;
+        }
+    }
     
     .buttons-container{
         display: flex;
