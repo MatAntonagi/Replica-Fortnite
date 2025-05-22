@@ -1,7 +1,7 @@
-const divLogoEpic = document.querySelector('.logo-epic')
-const logoEpic = document.getElementsByClassName('logo-epic')[0] //Pega a div do logo.
-const menuEpic = document.getElementsByClassName('list-container')[0] // Pega o menu escondido no icone.
-const navDesktop = document.getElementsByClassName('list-desktop') // Pega a nav do header.
+const header = document.querySelector('header')
+const divLogoEpic = document.querySelector('.logo-epic') //Pega a div do logo.
+const menuEpic = document.querySelector('.list-container') // Pega o menu escondido no icone.
+const navDesktop = document.querySelector('.list-desktop') // Pega a nav do header.
 const createLi = document.getElementById('create') //Pega a "li" Criar.
 const createMenu = document.getElementById('createMenu') // Pega a div com o menu.
 const shopLi = document.getElementById('shop')
@@ -16,12 +16,12 @@ const menuMobile = document.getElementById('menu-mobile')
 // Funçao de hover para aparecer o menu do Logo Epic.
 function menuOn () {
     // Abre ao passar o mouse por cima.
-    logoEpic.addEventListener('mouseenter', () => {
+    divLogoEpic.addEventListener('mouseenter', () => {
         menuEpic.style.display = "block";
     })
     
     // Fecha ao tirar o mouse de cima.
-    logoEpic.addEventListener('mouseleave', () => {
+    divLogoEpic.addEventListener('mouseleave', () => {
             menuEpic.style.display = "none";
     });
 }
